@@ -19,6 +19,7 @@
         <form action="testvaleur.php" method="post">
             <article class="espace_rep">
                 <p><input type="text" class="champ_rep" name="reponse" placeholder="Ta réponse !"></p>
+                <p>Il vous reste <?php echo 10-$coup ?></p>
                 <input type="hidden" name="coup" value="<?php echo $coup; ?>">
                 <button class="validate" type="submit" value="Plus" name="plus">   Valider !  </button>
             </article>
@@ -29,27 +30,32 @@
         </p>
         <p class="champ_indiq">
             <?php
-            if ($coup < 1000) {
-                if ($rep < $chiffre && $rep < 0) {
-                    echo ("Tu dois entrer une valeur entre 0 et 100 seulement !");
-                }
-                else if ($rep < $chiffre) {
-                    echo ("C'est plus !");
-                }
-                else if ($rep > $chiffre && $rep > 100) {
-                    echo ("Tu dois entrer une valeur entre 0 et 100 seulement !");
-                }
-                else if ($rep > $chiffre) {
-                    echo ("C'est moins !");
-                }
-                else if ($rep == $chiffre) { 
-                    $go = "hidden";
-                    $win = "visible";
-                } 
-            } else if ($coup == 10) {
-                $win = "hidden";
-                $go = "visible";
-            }
+            #if ( strval($coup) != strval(intval($coup)) ) {
+		    if ($coup < 10 ) {
+		        if ($rep < $chiffre && $rep < 0) {
+		            echo ("Tu dois entrer une valeur entre 0 et 100 seulement !");
+		        }
+		        else if ($rep < $chiffre) {
+		            echo ("C'est plus !");
+		        }
+		        else if ($rep > $chiffre && $rep > 100) {
+		            echo ("Tu dois entrer une valeur entre 0 et 100 seulement !");
+		        }
+		        else if ($rep > $chiffre) {
+		            echo ("C'est moins !");
+		        }
+		        else if ($rep == $chiffre) { 
+		            $go = "hidden";
+		            $win = "visible";
+		        } 
+		    } else if ($coup == 10) {
+		        $win = "hidden";
+		        $go = "visible";
+		    }
+	    #} else {
+	    #	$win = "hidden";
+	    #	$go = "visible";
+	    #}
                 ?>
         </p>
         <p class="compteur">

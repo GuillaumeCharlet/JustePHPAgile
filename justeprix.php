@@ -8,6 +8,7 @@
         $file = fopen("historique_chiffres.txt", "w");
         $min = 0;
         $max = 100;
+        $maxcoup = 10;
         $nb = rand($min, $max);
         fwrite($file, $nb);
         fclose($file);
@@ -23,6 +24,7 @@
                     <input type="hidden" name="coup" value="0">
                     <button class="validate" type="submit" value="Plus" name="plus">   Valider !  </button></p>
                 </article>
+                <p class="compteur"> Vous avez <?php echo ("$maxcoup"); ?> coups maximum ! </p>
                 <p class="compteur"> Coups: <?php echo ("$coup"); ?> </p>
             </form>
         
