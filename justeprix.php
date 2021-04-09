@@ -16,6 +16,11 @@
         fwrite($file, $nb);
         fclose($file);
 
+	if ( $min >= $max ) {
+		header('Location: http://justeprix.local/index.php');
+		exit();
+	}
+
         $fileh = fopen("historique.txt", "w");
         fwrite($fileh,"");
         fclose($fileh);
