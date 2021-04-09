@@ -30,6 +30,40 @@
                 <p class="compteur"> Vous avez <?php echo ("$maxcoup"); ?> coups maximum pour trouver la solution entre <?php echo ("$min et $max"); ?>! </p>
                 <p class="compteur"> Coups: <?php echo ("$coup"); ?> </p>
             </form>
-        
+        <style>
+            * {
+                background-color: black;
+            }
+            .titre {
+                text-align: center;
+                font-size: 5em;
+                font-family: Arial;
+                color: grey;
+            }
+            .espace_rep {
+                margin: auto;
+                width: 20%;
+                height: 5em;
+                text-align: center;
+            }
+            .champ_rep {
+                
+                border: none;
+                background-color: white;
+                padding: 1em;
+                margin: auto;
+                position: center;
+            }
+            .validate {
+                margin-top: 1em;
+                border: none;
+                padding: 1em;
+                background-color: green;
+                border-radius: 10%;
+            }
+            .compteur {
+                color: white;
+            }
+        </style>
     </body>
 </html>

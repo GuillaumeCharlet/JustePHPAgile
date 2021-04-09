@@ -89,4 +89,94 @@
             <a class="reco" href="index.php">Recommencer une partie !</a>
         </div>
     </form>
+    <style>
+            * {
+                background-color: black;
+                display: hidden;
+            }
+            .titre {
+                text-align: center;
+                font-size: 5em;
+                font-family: Arial;
+                color: grey;
+            }
+            .espace_rep {
+                margin: auto;
+                width: 20%;
+                height: 5em;
+                text-align: center;
+            }
+            .champ_rep {
+                border: none;
+                background-color: purple;
+                padding: 1em;
+                margin: auto;
+            }
+            .validate {
+                margin-top: 0;
+                border: none;
+                padding: 1em;
+                background-color: green;
+                border-radius: 10%;
+            }
+            .champ_info, .champ_indiq{
+                width: 6em;
+                height: auto;
+                background-color: white;
+                text-align: center;
+            }
+            .historique {
+                width: 200px;
+                color: white;
+                font-family: Arial;
+            }
+            .perdu, .compteur {
+                color: white;
+            }
+            .gagner {
+                text-align: center;
+                width: 30%;
+                height: 20%;
+                margin: auto;
+                background-color: green;
+            }
+            .perdu {
+                text-align: center;
+                width: 30%;
+                height: 20%;
+                margin: auto;
+                background-color: red;
+            }
+            .paragag {
+                color: white;
+                font-family: Arial;
+                background-color: green;
+            }
+            .paraper {
+                color: white;
+                font-family: Arial;
+                background-color: red;
+            }
+            .reco {
+                font-family: Arial;
+                margin-top: 0;
+                border: none;
+                padding: 1em;
+                background-color: transparent;
+                text-decoration: none;
+                border: simple black 2px;
+                border-radius: 30px;
+                color: white;
+            }
+            .reco:hover {
+                margin-top: 0;
+                border: none;
+                padding: 1em;
+                background-color: transparent;
+                text-decoration: none;
+                border: simple black 2px;
+                border-radius: 30px;
+                color: grey;
+            }
+        </style>
 </html>
