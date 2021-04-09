@@ -1,4 +1,4 @@
-<?php header('refresh: 10; url=looser.php');?>
+#<?php header('refresh: 45; url=looser.php');?>
 <html>
 <meta charset = "utf-8">
     <?php
@@ -120,10 +120,10 @@
                 border-radius: 10%;
             }
             .champ_info, .champ_indiq{
-                width: 6em;
+                margin-top: 80px;
                 height: auto;
-                background-color: white;
                 text-align: center;
+                color: white;
             }
             .historique {
                 width: 200px;
@@ -132,6 +132,7 @@
             }
             .perdu, .compteur {
                 color: white;
+                text-align: center;
             }
             .gagner {
                 text-align: center;

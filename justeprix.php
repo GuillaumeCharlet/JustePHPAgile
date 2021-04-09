@@ -33,6 +33,8 @@
         <style>
             * {
                 background-color: black;
+                text-align: center;
+                
             }
             .titre {
                 text-align: center;
@@ -63,6 +65,7 @@
             }
             .compteur {
                 color: white;
+                margin-top: 50px;
             }
         </style>
     </body>
